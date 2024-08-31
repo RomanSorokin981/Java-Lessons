@@ -1,7 +1,7 @@
 package com.rs.store;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
@@ -51,7 +51,7 @@ public class MainApplication {
 
                 }
                 Laptop laptop = new Laptop(laptopId, laptopProducer, laptopPrice, dateOfIssue, operationSystem);
-                System.out.println("You've successfully added a new laptop into the store " + laptop.toString());
+                System.out.println("You've successfully added a new laptop into the store " + laptop);
                 laptopStore.addItem(laptop);
 
             } else if (input == 3) {
@@ -84,8 +84,9 @@ public class MainApplication {
                     System.out.println("Неверный OS. Попробуйте снова." + e.getMessage());
 
                 }
+                Laptop updatedItem = new Laptop(laptopId, laptopProducer, laptopPrice, dateOfIssue, operationSystem);
 
-                laptopStore.updateItem(laptopId, laptopProducer, laptopPrice, dateOfIssue, operationSystem);
+                laptopStore.updateItem(updatedItem);
                 System.out.println("You've successfully updated the item");
 
             }

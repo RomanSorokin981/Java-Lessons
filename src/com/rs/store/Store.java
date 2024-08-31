@@ -25,11 +25,11 @@ public class Store {
 
     }
 
-    public void updateItem(int id, String producer, double price, LocalDate dateOfIssue, OsType operationSystem){
+    public void updateItem(Laptop updatedItem){
 
-        Laptop updatedItem = new Laptop(id, producer, price, dateOfIssue, operationSystem);
+
         for (int i = 0; i < storage.size(); i++){
-            if(id == storage.get(i).getId()){
+            if(updatedItem.getId() == storage.get(i).getId()){
                 storage.set(i, updatedItem);
             }
         }
