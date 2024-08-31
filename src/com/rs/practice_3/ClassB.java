@@ -1,0 +1,12 @@
+package com.rs.practice_3;
+
+public class ClassB {
+
+    public void test() {
+        ClassA notPrivateField = new ClassA();
+//        System.out.println("" + notPrivateField.privateField);
+        System.out.println("" + notPrivateField.defaultField);
+        System.out.println("" + notPrivateField.protectedField);
+        System.out.println("" + notPrivateField.publicField);
+    }
+}
