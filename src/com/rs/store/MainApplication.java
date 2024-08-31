@@ -16,7 +16,7 @@ public class MainApplication {
 
         while (input != 0){
             System.out.println("Select the option you want to use");
-            System.out.println("Press 1 to read the items");
+            System.out.println("Press one to read the items");
             System.out.println("Press 2 to add the item to the store");
             System.out.println("Press 3 to remove the item from the store");
             System.out.println("Press 4 to update the item in the store");
