@@ -86,7 +86,7 @@ public class MainApplication {
                 }
 
                 laptopStore.updateItem(laptopId, laptopProducer, laptopPrice, dateOfIssue, operationSystem);
-                System.out.println("You've successfully updated the laptop");
+                System.out.println("You've successfully updated the item");
 
             }
 
